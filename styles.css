@@ -1,0 +1,97 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    direction: rtl;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #1f1f1f;
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+}
+
+#definition-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#definition-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+#definition-list li:hover {
+    background-color: #333;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#next-button, #restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3b3b3b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover, #restart-button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+#reset-counter-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3b3b3b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-counter-button:hover {
+    background-color: #555;
+}
